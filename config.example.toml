@@ -1,0 +1,33 @@
+# Resy Search Configuration Example
+# Copy this file to config.toml and fill in your actual values
+
+[auth]
+# Authentication tokens for Resy API
+# Get these from your browser's developer tools when logged into Resy
+auth_token = "YOUR_AUTH_TOKEN_HERE"
+universal_token = "YOUR_UNIVERSAL_TOKEN_HERE"
+api_key = "YOUR_API_KEY_HERE"
+
+[search]
+# Search parameters
+day = "2025-10-11"          # Date in YYYY-MM-DD format
+party_size = 2              # Number of people in your party
+total_pages = 20            # Maximum number of pages to search
+
+[geo]
+# Geographic search area
+# Example coordinates for San Francisco
+latitude = 37.7577          # Latitude of search center
+longitude = -122.4376       # Longitude of search center  
+radius = 32200              # Search radius in meters (32200m = ~20 miles)
+
+# Other major cities examples:
+# New York: latitude = 40.712941, longitude = -74.006393
+# Los Angeles: latitude = 34.052235, longitude = -118.243683
+# Chicago: latitude = 41.878113, longitude = -87.629799
+
+[output]
+# Output file settings
+results_folder = "results"                      # Folder to save results
+json_filename = "venues_with_deposits.json"    # JSON output filename
+txt_filename = "venues_with_deposits.txt"      # Text output filename

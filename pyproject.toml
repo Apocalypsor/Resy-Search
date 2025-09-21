@@ -1,0 +1,10 @@
+[project]
+name = "resy"
+version = "0.1.0"
+description = "Resy Search"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "toml>=0.10.2",
+]
